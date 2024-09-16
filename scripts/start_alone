@@ -1,0 +1,10 @@
+#!/bin/bash
+
+NODE_OPTIONS="-r dotenv/config" npm run db:migrate
+
+mkdir .nostr
+cp resources/default-settings.yaml .nostr/settings.yaml
+cp resources/default-settings.yaml dist/resources/default-settings.yaml
+cp .nostr/settings.yaml dist/.nostr/settings.yaml
+
+npm run start
