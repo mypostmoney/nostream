@@ -9,4 +9,4 @@ cp -r resources/default-settings.yaml .nostr/settings.yaml
 #cp -r resources/default-settings.yaml dist/resources/default-settings.yaml
 # cp -r .nostr/settings.yaml dist/.nostr/settings.yaml
 
-npm run start
+npm run build

@@ -25,7 +25,6 @@
     "dev": "node -r ts-node/register src/index.ts",
     "clean": "rimraf ./{dist,.nyc_output,.test-reports,.coverage}",
     "build": "tsc --project tsconfig.build.json",
-    "postbuild": "mkdir dist/resources && cp -r resources/default-settings.yaml dist/resources/default-settings.yaml && mkdir dist/.nostr && cp -r .nostr/settings.yaml dist/.nostr/settings.yaml",
     "prestart": "npm run build",
     "start": "cd dist && node src/index.js",
     "build:check": "npm run build -- --noEmit",
