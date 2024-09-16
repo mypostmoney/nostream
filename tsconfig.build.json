@@ -23,7 +23,7 @@
     "transpileOnly": true
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*.ts", ".nostr/settings.yaml", "resources/default-settings.yaml"
   ],
   "exclude": [
     "node_modules",

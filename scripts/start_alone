@@ -1,12 +1,12 @@
 #!/bin/bash
 
-chomd +x .
+chmod +x .
 
 NODE_OPTIONS="-r dotenv/config" npm run db:migrate
 
 mkdir .nostr
-cp resources/default-settings.yaml .nostr/settings.yaml
-cp -r resources/default-settings.yaml dist/resources/default-settings.yaml
-cp -r .nostr/settings.yaml dist/.nostr/settings.yaml
+cp -r resources/default-settings.yaml .nostr/settings.yaml
+#cp -r resources/default-settings.yaml dist/resources/default-settings.yaml
+# cp -r .nostr/settings.yaml dist/.nostr/settings.yaml
 
 npm run start
